@@ -189,7 +189,51 @@ font-size:50px;
 .hero-content p{
 font-size:16px;
 }
+/* SCROLL ANIMATION */
 
+.stat-card,
+.feature-card,
+.review-box,
+.menu-card{
+opacity:0;
+transform:translateY(50px);
+transition:.8s;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* TOP BUTTON */
+
+#topBtn{
+position:fixed;
+bottom:25px;
+right:25px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#d4af37;
+color:black;
+font-size:22px;
+font-weight:bold;
+cursor:pointer;
+display:none;
+z-index:999;
+}
+
+/* PAGE LOADING */
+
+body{
+opacity:0;
+transition:.5s;
+}
+
+body.loaded{
+opacity:1;
+          }
 .stats{
 grid-template-columns:1fr;
 }
