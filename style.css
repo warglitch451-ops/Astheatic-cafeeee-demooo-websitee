@@ -239,3 +239,47 @@ grid-template-columns:1fr;
 }
 
 }
+.menu-section{
+padding:120px 8%;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.menu-card{
+background:#141414;
+border-radius:20px;
+overflow:hidden;
+transition:.4s;
+}
+
+.menu-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(212,175,55,.2);
+}
+
+.menu-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.menu-content{
+padding:25px;
+}
+
+.menu-content h3{
+color:#d4af37;
+margin-bottom:10px;
+}
+
+.price{
+display:inline-block;
+margin-top:15px;
+font-weight:700;
+color:#fff;
+font-size:20px;
+}
