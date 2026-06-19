@@ -425,3 +425,35 @@ grid-template-columns:1fr;
 }
 
 }
+.reviews{
+padding:120px 8%;
+text-align:center;
+}
+
+.review-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.review-box{
+background:#141414;
+padding:35px;
+border-radius:20px;
+transition:.4s;
+}
+
+.review-box:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 30px rgba(212,175,55,.2);
+}
+
+.review-box p{
+margin:15px 0;
+color:#bdbdbd;
+}
+
+.review-box h4{
+color:#d4af37;
+}
