@@ -400,30 +400,3 @@ box-shadow:0 10px 30px rgba(212,175,55,.2);
 color:#d4af37;
 margin-bottom:10px;
 }
-.contact-section{
-padding:120px 8%;
-}
-
-.contact-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
-
-.contact-card{
-background:#141414;
-padding:35px;
-border-radius:20px;
-text-align:center;
-transition:.4s;
-}
-
-.contact-card:hover{
-transform:translateY(-10px);
-box-shadow:0 10px 30px rgba(212,175,55,.2);
-}
-
-.contact-card h3{
-color:#d4af37;
-margin-bottom:10px;
-}
