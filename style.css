@@ -400,3 +400,28 @@ box-shadow:0 10px 30px rgba(212,175,55,.2);
 color:#d4af37;
 margin-bottom:10px;
 }
+.about-section{
+padding:120px 8%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about-content p{
+margin:20px 0;
+color:#bdbdbd;
+}
+
+.about-image img{
+width:100%;
+border-radius:20px;
+}
+
+@media(max-width:768px){
+
+.about-section{
+grid-template-columns:1fr;
+}
+
+}
