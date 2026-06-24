@@ -790,26 +790,69 @@ body,
     height: 220px;
   }
 }
-.about-image img{
-  width:100%;
-  height:420px;
-  object-fit:cover;
-  border-radius:18px;
-  display:block;
+/* =========================
+   REVIEWS + EMPTY SPACE FIX
+========================= */
+
+/* Remove extra black empty space */
+.menu-section,
+.gallery-section,
+.reservation-section,
+.contact-section{
+  min-height: auto;
 }
 
+/* Better review layout */
+.review-container{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:25px;
+}
+
+.review-box{
+  background:#141414;
+  padding:30px;
+  border-radius:18px;
+  min-height:250px;
+}
+
+.review-box p{
+  font-size:16px;
+  line-height:1.8;
+  color:#bdbdbd;
+}
+
+/* PHONE FIX */
 @media(max-width:768px){
-  .about-section{
+
+  /* Reviews become full-width cards */
+  .review-container{
     grid-template-columns:1fr;
-    gap:30px;
+    gap:20px;
+    margin-top:30px;
   }
 
-  .about-image img{
-    height:280px;
+  .review-box{
+    width:100%;
+    min-height:auto;
+    padding:25px 22px;
   }
 
-  .about-content p{
+  .review-box p{
     font-size:16px;
-    line-height:1.8;
+    line-height:1.7;
+  }
+
+  /* Less empty space below sections */
+  .menu-section,
+  .gallery-section,
+  .reservation-section,
+  .contact-section{
+    padding:95px 8% 60px;
+  }
+
+  /* Gallery should not have huge empty area */
+  .gallery-section{
+    padding-bottom:60px;
   }
 }
