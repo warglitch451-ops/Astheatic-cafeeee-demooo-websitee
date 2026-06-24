@@ -456,3 +456,337 @@ footer p{
     padding:110px 8% 60px;
   }
 }
+/* =========================
+   FINAL MOBILE + PAGE FIXES
+   Paste this at END of style.css
+========================= */
+
+/* Remove huge empty space */
+.menu-section,
+.gallery-section,
+.reservation-section,
+.contact-section{
+  min-height: auto;
+}
+
+/* Keep every page dark */
+body,
+.menu-section,
+.gallery-section,
+.about-section,
+.reviews,
+.reservation-section,
+.contact-section{
+  background: #0d0d0d;
+  color: #ffffff;
+}
+
+/* Fix menu page */
+.menu-section{
+  padding: 110px 8% 70px;
+}
+
+.menu-section .section-title{
+  color: #d4af37;
+}
+
+.menu-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.menu-card{
+  background: #141414;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.menu-card img{
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.menu-content{
+  padding: 22px;
+}
+
+.menu-content h3{
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.menu-content p{
+  color: #bdbdbd;
+  font-size: 14px;
+}
+
+.price{
+  color: #d4af37;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+/* Better review cards */
+.review-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.review-box{
+  background: #141414;
+  padding: 30px;
+  border-radius: 18px;
+  min-height: 260px;
+}
+
+.review-box p{
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Better contact cards */
+.contact-card{
+  min-height: 145px;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px){
+
+  /* Hide crowded links on phone */
+  .nav-links{
+    display: none;
+  }
+
+  .navbar{
+    padding: 16px 8%;
+  }
+
+  .logo{
+    font-size: 24px;
+  }
+
+  /* One menu card per row */
+  .menu-grid{
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  /* One review per row */
+  .review-container{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .review-box{
+    min-height: auto;
+    padding: 25px;
+  }
+
+  /* Contact cards one below another */
+  .contact-grid{
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  /* Gallery stays 2 columns */
+  .gallery-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .gallery-card img{
+    height: 170px;
+  }
+
+  /* Better spacing */
+  .menu-section,
+  .gallery-section,
+  .about-section,
+  .reviews,
+  .reservation-section,
+  .contact-section{
+    padding: 95px 8% 65px;
+  }
+
+  .section-title{
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .menu-card img{
+    height: 220px;
+  }
+  }
+/* =========================
+   FINAL MOBILE + PAGE FIXES
+   Paste this at END of style.css
+========================= */
+
+/* Remove huge empty space */
+.menu-section,
+.gallery-section,
+.reservation-section,
+.contact-section{
+  min-height: auto;
+}
+
+/* Keep every page dark */
+body,
+.menu-section,
+.gallery-section,
+.about-section,
+.reviews,
+.reservation-section,
+.contact-section{
+  background: #0d0d0d;
+  color: #ffffff;
+}
+
+/* Fix menu page */
+.menu-section{
+  padding: 110px 8% 70px;
+}
+
+.menu-section .section-title{
+  color: #d4af37;
+}
+
+.menu-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.menu-card{
+  background: #141414;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.menu-card img{
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.menu-content{
+  padding: 22px;
+}
+
+.menu-content h3{
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.menu-content p{
+  color: #bdbdbd;
+  font-size: 14px;
+}
+
+.price{
+  color: #d4af37;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+/* Better review cards */
+.review-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.review-box{
+  background: #141414;
+  padding: 30px;
+  border-radius: 18px;
+  min-height: 260px;
+}
+
+.review-box p{
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Better contact cards */
+.contact-card{
+  min-height: 145px;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px){
+
+  /* Hide crowded links on phone */
+  .nav-links{
+    display: none;
+  }
+
+  .navbar{
+    padding: 16px 8%;
+  }
+
+  .logo{
+    font-size: 24px;
+  }
+
+  /* One menu card per row */
+  .menu-grid{
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  /* One review per row */
+  .review-container{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .review-box{
+    min-height: auto;
+    padding: 25px;
+  }
+
+  /* Contact cards one below another */
+  .contact-grid{
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  /* Gallery stays 2 columns */
+  .gallery-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .gallery-card img{
+    height: 170px;
+  }
+
+  /* Better spacing */
+  .menu-section,
+  .gallery-section,
+  .about-section,
+  .reviews,
+  .reservation-section,
+  .contact-section{
+    padding: 95px 8% 65px;
+  }
+
+  .section-title{
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .menu-card img{
+    height: 220px;
+  }
+}
