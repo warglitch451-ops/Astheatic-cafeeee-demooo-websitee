@@ -89,15 +89,16 @@ border-radius:10px;
 background:transparent;
 cursor:pointer;
 }
-
 .menu-toggle span{
 display:block;
-width:22px;
-height:2px;
-margin:5px auto;
+width:24px;
+height:3px;
+margin:4px auto;
+border-radius:5px;
 background:var(--gold);
-transition:.25s ease;
+transition:.3s;
 }
+.menu
 
 /* HERO */
 .hero{
