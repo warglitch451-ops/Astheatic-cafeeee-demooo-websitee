@@ -938,3 +938,11 @@ body,
   }
 
 }
+@media (max-width: 768px) {
+  .menu-item img,
+  .menu-card img,
+  .menu-box img {
+    height: 220px !important;
+    object-fit: cover;
+  }
+}
