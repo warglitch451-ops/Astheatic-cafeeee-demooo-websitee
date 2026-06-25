@@ -1,68 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reservation - Luxe Café</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+  <title>Reserve a Table | Luxe Café</title>
+  <meta name="description" content="Reserve your table at Luxe Café.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav class="navbar">
+  <nav class="navbar">
+    <div class="logo">LUXE CAFÉ</div>
 
-<div class="logo">LUXE CAFÉ</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a class="active" href="reservation.html">Reserve</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="menu.html">Menu</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="reservation.html">Reserve</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+  <main>
+    <section class="reservation-section">
 
-</nav>
+      <div class="reservation-heading">
+        <p class="eyebrow">LUXURY DINING AWAITS</p>
+        <h1 class="section-title">Reserve Your Table</h1>
+        <p>Choose your preferred date and time. We will make your visit special.</p>
+      </div>
 
-<section class="reservation-section">
+      <form class="reservation-form" id="reservationForm">
 
-<h2 class="section-title">Reserve Your Table</h2>
+        <label for="name">Full Name</label>
+        <input id="name" type="text" placeholder="Enter your full name" required>
 
-<form class="reservation-form">
+        <label for="email">Email Address</label>
+        <input id="email" type="email" placeholder="Enter your email address" required>
 
-<input type="text" placeholder="Full Name" required>
+        <label for="phone">Phone Number</label>
+        <input id="phone" type="tel" placeholder="Enter your phone number" required>
 
-<input type="email" placeholder="Email Address" required>
+        <div class="form-row">
+          <div>
+            <label for="date">Date</label>
+            <input id="date" type="date" required>
+          </div>
 
-<input type="tel" placeholder="Phone Number" required>
+          <div>
+            <label for="time">Time</label>
+            <input id="time" type="time" required>
+          </div>
+        </div>
 
-<input type="date" required>
+        <label for="guests">Number of Guests</label>
+        <select id="guests" required>
+          <option value="" selected disabled>Select number of guests</option>
+          <option>1 Guest</option>
+          <option>2 Guests</option>
+          <option>3 Guests</option>
+          <option>4 Guests</option>
+          <option>5 Guests</option>
+          <option>6+ Guests</option>
+        </select>
 
-<input type="time" required>
+        <label for="request">Special Requests <span>(optional)</span></label>
+        <textarea id="request" placeholder="Birthday, anniversary, food preferences, etc." rows="5"></textarea>
 
-<input type="number" placeholder="Number Of Guests" min="1" required>
+        <button type="submit" class="btn">Reserve Now</button>
 
-<textarea placeholder="Special Requests" rows="5"></textarea>
+        <p class="form-message" id="formMessage"></p>
 
-<button type="submit" class="btn">
-Reserve Now
-</button>
+      </form>
 
-</form>
+    </section>
+  </main>
 
-</section>
+  <footer>
+    <h3>LUXE CAFÉ</h3>
+    <p>Open Daily • 10 AM – 11 PM</p>
+    <p>© 2026 Luxe Café. All Rights Reserved.</p>
+  </footer>
 
-<footer>
-
-<h3>LUXE CAFÉ</h3>
-
-<p>Open Daily • 10 AM - 11 PM</p>
-
-<p>© 2026 Luxe Café. All Rights Reserved.</p>
-
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
