@@ -98,7 +98,29 @@ border-radius:5px;
 background:var(--gold);
 transition:.3s;
 }
-.menu
+.menu-toggle{
+display:none;
+width:44px;
+height:44px;
+padding:10px;
+border:1px solid rgba(212,175,55,.55);
+border-radius:10px;
+background:transparent;
+cursor:pointer;
+}
+
+.menu-toggle span{
+display:block;
+width:24px;
+height:3px;
+margin:4px auto;
+border-radius:5px;
+background:var(--gold);
+transition:.3s;
+}
+
+/* HERO */
+.hero{
 
 /* HERO */
 .hero{
