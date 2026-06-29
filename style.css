@@ -109,6 +109,7 @@ img{
 =========================== */
 
 .hero{
+  width:100%;
   min-height:100vh;
   display:flex;
   justify-content:center;
@@ -117,15 +118,17 @@ img{
   padding:120px 20px 60px;
 
   background:
-  linear-gradient(rgba(0,0,0,.58),rgba(0,0,0,.78)),
-  url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070");
+    linear-gradient(rgba(0,0,0,.58),rgba(0,0,0,.78)),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070");
 
   background-size:cover;
   background-position:center;
+  background-repeat:no-repeat;
 }
 
 .hero-content{
   max-width:850px;
+  width:100%;
 }
 
 .hero-content h3{
@@ -143,8 +146,7 @@ img{
 
 .hero-content p{
   max-width:700px;
-  margin:auto;
-  margin-bottom:30px;
+  margin:0 auto 30px;
   color:#ddd;
   font-size:18px;
 }
