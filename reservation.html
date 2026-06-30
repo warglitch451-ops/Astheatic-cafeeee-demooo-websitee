@@ -1,98 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Reserve a Table | Luxe Café</title>
-  <meta name="description" content="Reserve your table at Luxe Café.">
+<meta charset="UTF-8">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+<title>Reserve a Table | Luxe Café</title>
+
+<meta name="description"
+content="Reserve your table at Luxe Café and enjoy premium dining, handcrafted coffee, and exceptional hospitality.">
+
+<meta name="theme-color"
+content="#C8A45D">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="style.css">
+
 </head>
 
 <body>
 
-  <nav class="navbar">
-    <div class="logo">LUXE CAFÉ</div>
-    
-<button class="menu-toggle" aria-label="Open menu">☰</button>
-    
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a class="active" href="reservation.html">Reserve</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<nav class="navbar">
 
-  <main>
-    <section class="reservation-section">
+<a href="index.html"
+class="logo">
 
-      <div class="reservation-heading">
-        <p class="eyebrow">LUXURY DINING AWAITS</p>
-        <h1 class="section-title">Reserve Your Table</h1>
-        <p>Choose your preferred date and time. We will make your visit special.</p>
-      </div>
+LUXE CAFÉ
 
-      <form class="reservation-form" id="reservationForm">
+</a>
 
-        <label for="name">Full Name</label>
-        <input id="name" type="text" placeholder="Enter your full name" required>
+<button
+type="button"
+class="menu-toggle"
+aria-label="Open navigation menu"
+aria-expanded="false">
 
-        <label for="email">Email Address</label>
-        <input id="email" type="email" placeholder="Enter your email address" required>
+<span></span>
+<span></span>
+<span></span>
 
-        <label for="phone">Phone Number</label>
-        <input id="phone" type="tel" placeholder="Enter your phone number" required>
+</button>
 
-        <div class="form-row">
-          <div>
-            <label for="date">Date</label>
-            <input id="date" type="date" required>
-          </div>
+<ul class="nav-links">
 
-          <div>
-            <label for="time">Time</label>
-            <input id="time" type="time" required>
-          </div>
-        </div>
+<li><a href="index.html">Home</a></li>
 
-        <label for="guests">Number of Guests</label>
-        <select id="guests" required>
-          <option value="" selected disabled>Select number of guests</option>
-          <option>1 Guest</option>
-          <option>2 Guests</option>
-          <option>3 Guests</option>
-          <option>4 Guests</option>
-          <option>5 Guests</option>
-          <option>6+ Guests</option>
-        </select>
+<li><a href="about.html">About</a></li>
 
-        <label for="request">Special Requests <span>(optional)</span></label>
-        <textarea id="request" placeholder="Birthday, anniversary, food preferences, etc." rows="5"></textarea>
+<li><a href="menu.html">Menu</a></li>
 
-        <button type="submit" class="btn">Reserve Now</button>
+<li><a href="gallery.html">Gallery</a></li>
 
-        <p class="form-message" id="formMessage"></p>
+<li><a class="active"
+href="reservation.html">
 
-      </form>
+Reserve
 
-    </section>
-  </main>
+</a></li>
 
-  <footer>
-    <h3>LUXE CAFÉ</h3>
-    <p>Open Daily • 10 AM – 11 PM</p>
-    <p>© 2026 Luxe Café. All Rights Reserved.</p>
-  </footer>
+<li><a href="contact.html">Contact</a></li>
 
-  <script src="script.js"></script>
+</ul>
+
+</nav>
+
+<main>
+
+<section class="reservation-section">
+
+<div class="reservation-heading">
+
+<p class="eyebrow">
+
+LUXURY DINING AWAITS
+
+</p>
+
+<h1 class="section-title">
+
+Reserve Your Table
+
+</h1>
+
+<p>
+
+Book your table in advance and let us prepare an unforgettable dining experience for you.
+
+</p>
+
+</div>
+
+<form
+class="reservation-form"
+id="reservationForm">
+
+<label for="name">
+
+Full Name
+
+</label>
+
+<input
+id="name"
+type="text"
+placeholder="Enter your full name"
+required>
+
+<label for="email">
+
+Email Address
+
+</label>
+
+<input
+id="email"
+type="email"
+placeholder="Enter your email"
+required>
+
+<label for="phone">
+
+Phone Number
+
+</label>
+
+<input
+id="phone"
+type="tel"
+placeholder="Enter your phone number"
+required>
+
+<div class="form-row">
+
+<div>
+
+<label for="date">
+
+Reservation Date
+
+</label>
+
+<input
+id="date"
+type="date"
+required>
+
+</div>
+
+<div>
+
+<label for="time">
+
+Reservation Time
+
+</label>
+
+<input
+id="time"
+type="time"
+required>
+
+</div>
+
+</div>
+
+<label for="guests">
+
+Number of Guests
+
+</label>
+
+<select
+id="guests"
+required>
+
+<option
+value=""
+selected
+disabled>
+
+Select Guests
+
+</option>
+
+<option>1 Guest</option>
+<option>2 Guests</option>
+<option>3 Guests</option>
+<option>4 Guests</option>
+<option>5 Guests</option>
+<option>6 Guests</option>
+<option>7+ Guests</option>
+
+</select>
+
+<label for="request">
+
+Special Requests
+<span>(Optional)</span>
+
+</label>
+
+<textarea
+id="request"
+rows="5"
+placeholder="Birthday celebration, anniversary, dietary requirements or any special requests."></textarea>
+
+<p class="booking-note">
+
+We'll contact you shortly to confirm your reservation.
+
+</p>
+
+<button
+type="submit"
+class="btn">
+
+Reserve Your Table
+
+</button>
+
+<p
+class="form-message"
+id="formMessage">
+
+  </p>
+  </form>
+
+<section class="reservation-benefits">
+
+<h2 class="section-title">
+Why Reserve With Us?
+</h2>
+
+<div class="why-grid">
+
+<div class="why-card">
+
+<h3>🍽 Premium Dining</h3>
+
+<p>
+Enjoy freshly prepared dishes made with premium ingredients by our experienced chefs.
+</p>
+
+</div>
+
+<div class="why-card">
+
+<h3>☕ Handcrafted Coffee</h3>
+
+<p>
+Taste expertly brewed coffee made from carefully selected beans.
+</p>
+
+</div>
+
+<div class="why-card">
+
+<h3>🎉 Perfect for Every Occasion</h3>
+
+<p>
+Whether it's a birthday, anniversary, family dinner, or business meeting, we'll make it memorable.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="reservation-cta">
+
+<h2>
+We Look Forward to Welcoming You
+</h2>
+
+<p>
+Reserve your table today and enjoy an unforgettable experience with exceptional food, warm hospitality, and a luxurious atmosphere.
+</p>
+
+<div class="hero-buttons">
+
+<a href="menu.html" class="btn">
+View Our Menu
+</a>
+
+<a href="contact.html" class="btn btn-outline">
+Contact Us
+</a>
+
+</div>
+
+</section>
+
+</section>
+
+</main>
+
+<footer>
+
+<div class="footer-content">
+
+<h3>LUXE CAFÉ</h3>
+
+<p>
+Premium Dining • Fresh Coffee • Gourmet Cuisine
+</p>
+
+<p>
+Luxury Street, Mumbai, India
+</p>
+
+<p>
+Phone:
+<a href="tel:+919876543210">
++91 98765 43210
+</a>
+</p>
+
+<p>
+Email:
+<a href="mailto:info@luxecafe.com">
+info@luxecafe.com
+</a>
+</p>
+
+<p>
+Open Daily: 10:00 AM – 11:00 PM
+</p>
+
+<p>
+© 2026 Luxe Café. All Rights Reserved.
+</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
