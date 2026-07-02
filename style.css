@@ -421,7 +421,7 @@ pointer-events:none;
 position:relative;
 z-index:2;
 }
-}
+
 
 /* ==========================================
    STATS
@@ -1611,3 +1611,18 @@ gap:35px;
 /* ==========================================
    END OF FILE
 ========================================== */
+/* ==========================================
+   HAMBURGER MENU ANIMATION
+========================================== */
+
+.menu-toggle.active span:nth-child(1){
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2){
+    opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+    transform: translateY(-7px) rotate(-45deg);
+}
