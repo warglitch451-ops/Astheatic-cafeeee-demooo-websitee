@@ -34,36 +34,41 @@ const navLinks = document.querySelector(".nav-links");
 
 if (menuToggle && navLinks) {
 
-  menuToggle.addEventListener("click", () => {
+  menuToggle.addEventListener("click", function () {
 
     navLinks.classList.toggle("show-menu");
 
     menuToggle.classList.toggle("active");
 
-    menuToggle.setAttribute(
+    this.setAttribute(
       "aria-expanded",
       navLinks.classList.contains("show-menu")
     );
 
   });
 
-  // Close menu after clicking a link
   document.querySelectorAll(".nav-links a").forEach(link => {
-
     link.addEventListener("click", () => {
-
       navLinks.classList.remove("show-menu");
-
       menuToggle.classList.remove("active");
-
       menuToggle.setAttribute("aria-expanded", "false");
-
     });
+  });
+
+  document.addEventListener("click", function(e){
+
+    if(
+      !menuToggle.contains(e.target) &&
+      !navLinks.contains(e.target)
+    ){
+      navLinks.classList.remove("show-menu");
+      menuToggle.classList.remove("active");
+      menuToggle.setAttribute("aria-expanded","false");
+    }
 
   });
 
 }
-
 // ==========================
 // ACTIVE NAVIGATION LINK
 // ==========================
