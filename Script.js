@@ -1,3 +1,5 @@
+
+alert("JavaScript Loaded");
 // ==========================
 // LUXE CAFÉ SCRIPT
 // ==========================
